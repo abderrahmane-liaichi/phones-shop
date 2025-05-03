@@ -1,100 +1,110 @@
 *{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
-body{
-	background-image: url(wallpaperflare.com_wallpaper\ \(1\).jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
+.contiener{
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    background-color: black;
 }
-.login{
-	width: 1200px;
-	height: 600px;
-	margin: 200px auto;
+.parent{
+    width: 80%;
+    margin: auto;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.parentdesc, .parentlogin{
-	width: 50%;
-	height: 600px;
-	position: relative;
-	float: left;
-	background-color: aqua;
+.logo img{
+    width: 40px;
+    height: 40px;
 }
-.parentdesc{
-	background-color: rgba(245, 245, 220, 0.671);
-	border-top-left-radius: 30px;
-	border-bottom-left-radius: 30px;
+.nav ul li {
+    display: inline-block;
+    align-items: center;
+    margin-right: 10px;
 }
-.parentlogin{
-	background-color: rgba(10, 115, 206, 0.13);
-	border-top-right-radius: 30px;
-	border-bottom-right-radius: 30px;
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 15px;
 }
-.description{
-	width: 350px;
-	height: 250px;
-	position: absolute;
-	top: 200px;
-	left: 70px;
+.nav ul li a:hover, .active{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
 }
-.description h1{
-	margin-bottom: 20px;
-	font-weight: 900;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.nav ul li .active{
+    color: black;
 }
-.description p{
-	margin-bottom: 40px;
-	font-weight: 500;
-	font-family: Arial, Helvetica, sans-serif;
+
+/*******************End Header**************************/
+
+
+.content{
+    height: 500px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
-.description a{
-	border: none;
-	color: black;
-	font-weight: 800;
-	font-style: oblique;
-	text-decoration: none;
-	padding: 13px 45px;
-	border-radius: 18px;
-	border: 1px solid black;
+.left-content{
+    width: 40%;
+    color: white;
 }
-form{
-	width: 350px;
-	height: 250px;
-	position: absolute;
-	top: 200px;
-	left: 100px;
-	text-align: center;
+.left-content h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
-form h1{
-	margin-bottom: 30px;
-	font-weight: 900;
-	font-style: italic;
-	color: black;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.left-content p{
+    font-size: 18px;
+    padding: 35px 0px;
 }
-input[type=text], input[type=password]{
-	width: 90%;
-	height: 30px;
-	border: none;
-	border-bottom: 1px solid black;
-	background-color: rgba(255, 255, 255, 0);
+.left-content a{
+    text-decoration: none;
+    background-color: white;
+    padding: 8px 15px;
+    color: black;
+    font-size: 18px;
+    border-radius: 20px;
 }
-input[type=text]{
-	margin-bottom: 7px;
+
+.left-content a:hover{
+    box-shadow: 0 0 12px rgba(255, 217, 0, 0.438);
+    z-index: 99;
 }
-input[type=password]{
-	margin-bottom: 30px;
+.right-content{
+    width: 30%;
 }
-input[type=submit]{
-	height: 30px;
-	width: 80%;
-	border: none;
-	border-radius: 20px;
-	background-color: black;
-	color: white;
+.right-content img{
+    width: 200px;
+    transition: 0.5s;
 }
-span{
-	text-decoration: underline;
-	color: black;
-	color: rgba(0, 0, 255, 0.432);
+.right-content img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.icons{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+}
+.icons img{
+    width: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: transparent;
+
+}
+.icons img:hover{
+    transform: scale(1.2);
 }
